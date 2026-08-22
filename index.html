@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saniya Kamble — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero" id="home">
+  <div class="avatar">
+    <img src="assets/saniya-photo.jpg" alt="Saniya Sanjay Kamble">
+    <span class="fallback">SK</span>
+  </div>
+  <div class="role">Web Developer in Training</div>
+  <h1>Hi, I'm Saniya Sanjay Kamble</h1>
+
+  <nav class="pillnav">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <p>A final-year student learning web development, one project at a time. I build simple, clean websites using HTML and CSS, and I'm currently exploring Git and GitHub.</p>
+  <div class="hero-actions">
+    <a class="btn btn-amber" href="#projects">View My Work</a>
+    <a class="btn btn-outline" href="#contact">Get In Touch</a>
+  </div>
+</section>
+
+<section id="greet">
+  <div class="greet-card" id="greetCard">
+    <div id="greetForm">
+      <div class="greet-eyebrow">Say Hello</div>
+      <h3>Visiting my portfolio?</h3>
+      <p>Leave your name and email — I'd love to know who stopped by.</p>
+      <input type="text" id="visitorName" placeholder="Your name">
+      <input type="email" id="visitorEmail" placeholder="Your email">
+      <button onclick="greetVisitor()">Say Hi</button>
+    </div>
+    <div id="greetThanks" style="display:none;">
+      <div class="greet-eyebrow">Thank You</div>
+      <h3 id="thanksHeading"></h3>
+      <p>I appreciate you taking the time to visit my portfolio. Hope you liked what you saw!</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-head">
+    <div class="eyebrow">Introduction</div>
+    <h2>About Me</h2>
+  </div>
+  <div class="about-text">
+    <p>I'm a student with a growing interest in web development and design. I enjoy turning a plain idea into a working webpage, and I'm currently building my basics in HTML, CSS, Git and GitHub through small hands-on projects.</p>
+    <p>Outside of coursework, I like exploring new tools, practicing layout design, and slowly building a portfolio of real projects instead of just following tutorials.</p>
+  </div>
+  <div class="objective">
+    <span>Career Objective</span>
+    To grow into a confident front-end developer by building practical projects, understanding version control, and gradually contributing to real-world web applications.
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-head">
+    <div class="eyebrow">Background</div>
+    <h2>Education</h2>
+  </div>
+  <div class="edu-wrap">
+    <div class="edu-item">
+      <div class="edu-year">Present</div>
+      <div>
+        <h3>Bachelor of Computer Application (BCA), D.R. Mane Mahavidyalaya</h3>
+        <p>Currently pursuing</p>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-year">12th</div>
+      <div>
+        <h3>Higher Secondary (12th), VSM College, Nipani</h3>
+        <p>Junior College</p>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-year">10th</div>
+      <div>
+        <h3>Secondary School (10th), M.H.P.S. Mattiwade</h3>
+        <p>High School</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head">
+    <div class="eyebrow">What I Know</div>
+    <h2>Skills</h2>
+  </div>
+  <div class="skill-grid">
+    <div class="skill-chip">HTML</div>
+    <div class="skill-chip">CSS</div>
+    <div class="skill-chip">Git</div>
+    <div class="skill-chip">GitHub</div>
+    <div class="skill-chip">Responsive Design</div>
+    <div class="skill-chip">Basic JavaScript</div>
+    <div class="skill-chip">Problem Solving</div>
+    <div class="skill-chip">Communication</div>
+    <div class="skill-chip">Time Management</div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-head">
+    <div class="eyebrow">My Work</div>
+    <h2>Projects</h2>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card">
+      <div class="proj-media"><span>E-Commerce<br>Website</span></div>
+      <div class="proj-body">
+        <div class="proj-tag">HTML &amp; CSS</div>
+        <h3>Bookstore E-Commerce Page</h3>
+        <p>A single-page secondhand bookstore layout with a product grid, pricing and a responsive design for mobile.</p>
+        <a class="proj-link" href="ecommerce-project.html">View Project →</a>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-media"><span>College<br>Website</span></div>
+      <div class="proj-body">
+        <div class="proj-tag">HTML &amp; CSS</div>
+        <h3>College Website — D.R. Mane Mahavidyalaya</h3>
+        <p>A one-page college website with sections for about, departments, facilities and contact information.</p>
+        <a class="proj-link" href="college-website.html">View Project →</a>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-media"><span>Portfolio<br>Website</span></div>
+      <div class="proj-body">
+        <div class="proj-tag">HTML &amp; CSS</div>
+        <h3>This Portfolio Website</h3>
+        <p>My personal portfolio built to showcase my introduction, skills, education and academic projects.</p>
+        <a class="proj-link" href="index.html">View Project →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <div class="eyebrow">Reach Out</div>
+    <h2>Contact</h2>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-row"><span>Email</span><span>saniyakamble2113@gmail.com</span></div>
+    <div class="contact-row"><span>Phone</span><span>+91 87884 01814</span></div>
+    <div class="contact-row"><span>Location</span><span>Kagal, Kolhapur, Maharashtra</span></div>
+    <div class="contact-row"><span>GitHub</span><span><a href="https://github.com/saniyakamble-0406?tab=repositories">github.com/saniyakamble-0406</a></span></div>
+    <div class="contact-row"><span>LinkedIn</span><span><a href="https://www.linkedin.com/in/saniya-kamble-928979429">linkedin.com/saniya-kamble</a></span></div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Saniya Sanjay Kamble. Built with HTML &amp; CSS.
+</footer>
+
+<script>
+function greetVisitor(){
+  var name = document.getElementById('visitorName').value.trim();
+  var email = document.getElementById('visitorEmail').value.trim();
+  if(!name || !email){
+    alert('Please enter both your name and email.');
+    return;
+  }
+  document.getElementById('thanksHeading').textContent = 'Thanks for visiting, ' + name + '!';
+  document.getElementById('greetForm').style.display = 'none';
+  document.getElementById('greetThanks').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
